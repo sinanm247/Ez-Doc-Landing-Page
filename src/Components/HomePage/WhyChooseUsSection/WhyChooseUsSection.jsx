@@ -1,0 +1,89 @@
+import "./WhyChooseUsSection.scss";
+import { FaWhatsapp } from "react-icons/fa";
+import heroImage from "../../../assets/Images/image-1.png";
+import mobileHeroImage from "../../../assets/Images/image-2.png";
+import icon1 from "../../../assets/Icons/icon-1.png";
+import icon2 from "../../../assets/Icons/icon-2.png";
+import icon3 from "../../../assets/Icons/icon-3.png";
+import icon4 from "../../../assets/Icons/icon-4.png";
+import icon5 from "../../../assets/Icons/icon-5.png";
+import icon6 from "../../../assets/Icons/icon-14.png";
+import useIsMobile from "../../../Utils/useIsMobile";
+
+const features = [
+  {
+    id: 1,
+    icon: icon1,
+    title: "Licensed & Safe",
+    description: "All staff are DHA/MOH licensed and strictly vetted."
+  },
+  {
+    id: 2,
+    icon: icon2,
+    title: "24/7 Doctor at Home",
+    description: "Day or night, we are ready to visit you anytime."
+  },
+  {
+    id: 3,
+    icon: icon3,
+    title: "Faster Than Clinics",
+    description: "Doctor ETA within 30-60 minutes. No waiting rooms."
+  },
+  {
+    id: 4,
+    icon: icon4,
+    title: "Multilingual Team",
+    description: "Doctors speak English, Arabic, Russian, Hindi and Urdu."
+  },
+  {
+    id: 5,
+    icon: icon5,
+    title: "Trusted by 10,000+ Families",
+    description: "Reliable care across Dubai and the UAE."
+  },
+  {
+    id: 6,
+    icon: icon6,
+    title: "All-in-One Care at Home",
+    description: "Labs, IV meds, ear wash, nebulisation, and more."
+  }
+];
+
+const WhyChooseUsSection = () => {
+  const isMobile = useIsMobile(768);
+  return (
+    <section id="why-choose-us" className="why-choose-us-section section-container">
+      <div className="why-choose-us-wrapper">
+        <div className="why-choose-us-content">
+          <div className="hero-image-container">
+            <img src={isMobile ? mobileHeroImage : heroImage} alt="City Doctor Hero" className="hero-image" />
+          </div>
+          <div className="features-container">
+            <h1 className="section-title">Why EZDoc is the <br/> Best Choice</h1>
+            <div className="features-list">
+              {features.map((feature) => (
+                <div key={feature.id} className="feature-item">
+                  <div className="feature-icon-wrapper">
+                    <img src={feature.icon} alt={feature.title} className="feature-icon" />
+                  </div>
+                  <div className="feature-content">
+                    <h3 className="feature-title">{feature.title}</h3>
+                    <p className="feature-description">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="whatsapp-booking-wrapper">
+              <a href="https://wa.me/971987654321" className="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="btn-icon" />
+                Book instantly via WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhyChooseUsSection;

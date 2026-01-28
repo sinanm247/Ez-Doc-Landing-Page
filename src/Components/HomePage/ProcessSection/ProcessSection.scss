@@ -1,0 +1,252 @@
+@import '../../../index.scss';
+
+.process-section {
+  background: $secondary;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .process-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    .process-title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: white;
+      margin: 0 0 20px 0;
+    }
+
+    .section-description {
+      font-size: 18px;
+      line-height: 1.6;
+      color: white;
+      margin: 0 auto 50px auto;
+      max-width: 900px;
+    }
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .step-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    gap: 0px;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .step-image-wrapper {
+      width: 70px;
+      height: 90px;
+      border-radius: 10px;
+
+      .step-icon-container {
+        width: 100%;
+        height: 100%;
+        background: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        border-radius: 15px 12px 12px 15px;
+
+        .step-label {
+          margin-top: -5px;
+          font-size: 38px;
+          font-weight: 700;
+          color: $primary;
+        }
+
+        .step-text {
+          margin-top: -10px;
+          font-size: 12px;
+          font-weight: 500;
+          color: $black;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .step-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      background: $white;
+      color: #333;
+      gap: 5px;
+      text-align: left;
+      height: 90px;
+      padding: 10px 20px;
+      border-radius: 15px 12px 12px 15px;
+    }
+
+    .step-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: $primary;
+    }
+
+    .step-description {
+      font-size: 12px;
+      margin: 0;
+      color: $black;
+      font-weight: 500;
+    }
+  }
+
+  .whatsapp-booking-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .btn {
+      min-width: 300px;
+      padding: 14px 28px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .process-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .process-wrapper {
+      .process-title {
+        font-size: 36px;
+      }
+
+      .section-description {
+        font-size: 17px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .whatsapp-booking-wrapper {
+      margin-top: 50px;
+
+      .btn {
+        min-width: 300px;
+        padding: 14px 28px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 968px) {
+  .process-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .process-wrapper {
+      .process-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+
+      .section-description {
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .steps-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .whatsapp-booking-wrapper {
+      margin-top: 50px;
+
+      .btn {
+        min-width: 300px;
+        padding: 14px 28px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .process-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .process-wrapper {
+      .process-title {
+        font-size: 28px;
+        margin-bottom: 12px;
+      }
+
+      .section-description {
+        font-size: 15px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .steps-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .whatsapp-booking-wrapper {
+      margin-top: 50px;
+
+      .btn {
+        min-width: 100%;
+        width: 100%;
+        padding: 14px 28px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .process-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .process-wrapper {
+      .process-title {
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+
+      .section-description {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .steps-grid {
+      gap: 15px;
+    }
+
+
+    .whatsapp-booking-wrapper {
+      margin-top: 20px;
+
+      .btn {
+        min-width: 100%;
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 15px;
+      }
+    }
+  }
+}

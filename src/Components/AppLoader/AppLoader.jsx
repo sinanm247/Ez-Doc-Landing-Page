@@ -1,5 +1,5 @@
 import "./AppLoader.scss";
-import logo from "../../assets/Logo/InstaDoc-Logo-White.png";
+import logo from "../../assets/Logo/EzDoc-Logo-White.png";
 
 export default function AppLoader({ isVisible }) {
   return (

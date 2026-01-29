@@ -95,7 +95,7 @@
     }
 
     .step-title {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 700;
       color: $primary;
     }
@@ -223,7 +223,8 @@
 
     .process-wrapper {
       .process-title {
-        font-size: 26px;
+        font-size: 30px;
+        font-weight: 600;
         margin-bottom: 10px;
       }
 
@@ -239,13 +240,17 @@
 
 
     .whatsapp-booking-wrapper {
-      margin-top: 20px;
+      margin-top: 30px;
 
       .btn {
         min-width: 100%;
         width: 100%;
         padding: 12px 24px;
-        font-size: 15px;
+        font-size: 22px;
+
+        .btn-icon {
+          font-size: 30px;
+        }
       }
     }
   }

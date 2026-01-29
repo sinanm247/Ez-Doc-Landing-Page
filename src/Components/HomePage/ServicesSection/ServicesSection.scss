@@ -258,6 +258,14 @@
       padding: 0;
       gap: 0px;
 
+      &:nth-child(odd) {
+        order: 1;
+      }
+
+      &:nth-child(even) {
+        order: 2;
+      }
+
       .service-image-wrapper {
         width: 100px;
         height: 100px;
@@ -341,7 +349,11 @@
         min-width: 100%;
         width: 100%;
         padding: 12px 20px;
-        font-size: 15px;
+        font-size: 22px;
+
+        .btn-icon {
+          font-size: 30px;
+        }
       }
     }
   }

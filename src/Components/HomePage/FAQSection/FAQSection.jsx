@@ -55,11 +55,11 @@ const FAQSection = () => {
   return (
     <section id="faq" className="faq-section section-container">
       <div className="faq-wrapper">
-        <h1 className="section-title">Got Questions? We've Got Answers!</h1>
-        <p className="faq-description">
+        <h1 className="section-title">Frequently Asked Questions</h1>
+        {/* <p className="faq-description">
           Find answers to common questions about City Doctor's home medical services. 
           If you have additional questions, feel free to contact us directly.
-        </p>
+        </p> */}
 
         <div className="faq-list">
           {faqs.map((faq, index) => (

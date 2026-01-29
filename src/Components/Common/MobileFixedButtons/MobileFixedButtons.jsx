@@ -9,7 +9,7 @@ export default function MobileFixedButtons() {
   return (
     <div className="mobile-fixed-buttons">
       <a
-        href="https://wa.me/971987654321"
+        href="https://wa.me/971526120440"
         className="fixed-btn whatsapp-btn"
         target="_blank"
         rel="noopener noreferrer"
@@ -19,7 +19,7 @@ export default function MobileFixedButtons() {
       </a>
       <a 
         // onClick={openModal}
-        href="tel:+971551548684"
+        href="tel:+971526120440"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed-btn book-online-btn"

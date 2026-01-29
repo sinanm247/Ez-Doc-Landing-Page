@@ -6,7 +6,7 @@ const steps = [
     id: 1,
     stepNumber: "1",
     title: "Call or WhatsApp",
-    description: "Call or WhatsApp us at +971 55 154 8684 to request a doctor visit."
+    description: "Call or WhatsApp us at +971 52 612 0440 to request a doctor visit."
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const ProcessSection = () => {
         </div>
 
         <div className="whatsapp-booking-wrapper">
-          <a href="https://wa.me/971987654321" className="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/971526120440" className="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp className="btn-icon" />
             Book instantly via WhatsApp
           </a>

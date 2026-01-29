@@ -78,9 +78,9 @@ const ServicesSection = () => {
   return (
     <section id="services" className="services-section">
       <div className="services-wrapper">
-        <h1 className="section-title">Medical Team, Delivered <br/>to Your Doorstep</h1>
+        <h1 className="section-title">Simple Home Care for<br/>Everyday Illnesses</h1>
         <p className="section-description">
-          From diagnosis and lab tests to instant medication—our fully equipped mobile team handles everything at your bedside, so you can start recovering immediately.
+        Quick diagnosis, simple treatment plans, and easy access to extended care. Book lab tests, blood tests, IV drips, nebulization, and more from home.
         </p>
         
         <div className="services-grid">
@@ -101,7 +101,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="whatsapp-booking-wrapper">
-          <a href="https://wa.me/971987654321" className="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/971526120440" className="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp className="btn-icon" />
             Book instantly via WhatsApp
           </a>

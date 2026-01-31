@@ -255,3 +255,17 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .process-section {
+    .whatsapp-booking-wrapper {
+      .btn {
+        font-size: 18px;
+
+        .btn-icon {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

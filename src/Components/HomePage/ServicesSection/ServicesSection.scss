@@ -358,3 +358,68 @@
     }
   }
 }
+
+@media (max-width: 420px) {
+  .services-section {
+    .services-wrapper {
+      .section-title {
+        font-size: 30px;
+      }
+
+      .section-description {
+        font-size: 17px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .services-grid {
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .service-card {
+      padding: 0;
+      gap: 0px;
+
+      .service-image-wrapper {
+        width: 70px;
+        height: 70px;
+
+        .service-image {
+          width: 35px;
+          height: 35px;
+        }
+      }
+
+      .service-content {
+        min-height: 70px;
+        height: 70px;
+        padding: 10px 10px 10px 40px;
+        gap: 2px;
+
+        .service-title {
+          font-size: 18px;
+        }
+
+        .service-description {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .whatsapp-booking-wrapper {
+      margin-top: 25px;
+
+      .btn {
+        min-width: 100%;
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 18px;
+
+        .btn-icon {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

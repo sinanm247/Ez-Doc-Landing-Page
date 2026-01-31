@@ -439,3 +439,47 @@
       }
   }
 }
+
+@media (max-width: 420px) {
+  .hero-stats-mobile {
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  
+    .stat-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 5px;
+      width: 100px;
+      text-align: center;
+      border-radius: 15px;
+      color: $white;
+  
+      .stat-value {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        font-size: 24px;
+        font-weight: 700;
+        // color: white;
+        margin-bottom: 5px;
+        line-height: 1;
+  
+        .star-icon {
+          font-size: 22px;
+          color: #FFB100;
+        }
+      }
+  
+      .stat-label {
+        font-size: 14px;
+        font-weight: 600;
+        // color: white;
+        line-height: 1.2;
+      }
+    }
+  }
+}
